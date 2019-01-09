@@ -1,19 +1,8 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+resources:
+- repo: self
 
-trigger:
-- master
-
-pool:
-  vmImage: 'Ubuntu-16.04'
-
+pool: server
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: Delay@1
+  displayName: 'Delay by 0 minutes'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
