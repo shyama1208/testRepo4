@@ -4,5 +4,5 @@ resources:
 pool: server
 steps:
 - task: Delay@1
-  displayName: 'Delay by 0 minutes'
+  displayName: 'Delay by 1 minutes'
 
